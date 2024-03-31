@@ -3,183 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potofolio Web</title>
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-        nav {
-            flex-grow: 1;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-        }
-        nav a:last-child {
-            margin-right: 0;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
 <header>
-    <div>
-        <img src="path/to/logo.jpg" alt="Logo" width="95" height="50">
-    </div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+  <div class="logo">
+       <img src="Element/logo_yoga.png" alt="Logo">
+  </div>
+  <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
     </nav>
-    <div>
-        <a href="#"><img src="path/to/linkedin_logo.jpg" alt="LinkedIn" width="21" height="21"></a>
-        <a href="#"><img src="path/to/github_logo.jpg" alt="GitHub" width="21" height="21"></a>
-        <a href="#"><img src="path/to/email_logo.jpg" alt="Email" width="21" height="21"></a>
-    </div>
-</header>
+        <div class="social-icons">
+            <a href="#"><img src="element/linkedin.png" alt="LinkedIn" width="20" height="19"></a>
+            <a href="#"><img src="element/github.png" alt="GitHub" width="20" height="19"></a>
+            <a href="#"><img src="element/email.png" alt="Email" width="28" height="17"></a>
+        </div>
+    </header>
 
-<hr>
-<section>
-    <div style="float: left; width: 50%;">
+<body>
+<section class="hero-section">
+    <div class="text-content">
         <h1>Graphic UI UX Designer</h1>
         <p>
             Saya adalah desainer UI/UX grafis junior yang bersemangat dengan kreativitas dan dedikasi untuk menciptakan pengalaman pengguna yang menarik dan intuitif. Dengan latar belakang pendidikan dalam desain dan pemahaman yang kuat tentang tren desain terkini, saya siap untuk memberikan kontribusi positif dalam menghadirkan solusi visual yang memukau dan fungsional.
         </p>
         <button>My Work</button>
     </div>
-    <div style="float: right; width: 40%;">
-        <img src="path/to/main_image.jpg" alt="Yoga_Fahrizal" width="400">
-        <h2>YOGA FAHRIZAL<h2>
+    <div class="image-content">
+        <img src="Element/Yogaa.png" alt="Yoga_Fahrizal" width="400">
     </div>
-    <div style="clear: both;"></div>
-
-<hr>
-<section>
-    <h1 style="text-align: center;">About Me</h1>
-    <div style="float: left; width: 40%;">
-        <img src="path/to/my_photo.jpg" alt="Yoga Fahrizal" width="300">
-    </div>
-    <div style="float: right; width: 55%;">
-        <p>
-            Saya seorang mahasiswa Teknik Informatika dengan minat mendalam dalam desain visual, khususnya UI/UX. Memiliki beberapa pengalaman dalam proyek desain, saya berdedikasi untuk mengintegrasikan kreativitas dalam teknologi, menciptakan solusi yang inovatif dan memikat.
-        </p>
-        <button>Detail</button>
-    </div>
-    <div style="clear: both;"></div>
 </section>
 
-<hr>
-<section>
-    <h1 style="float: left;">Skills</h1>
-    <div style="float: right;">
-        <img src="path/to/app1_logo.jpg" alt="Figma" width="100" style="margin-bottom: 20px;">
-        <img src="path/to/app2_logo.jpg" alt="Photoshop" width="100" style="margin-bottom: 20px;"><br>
-        <img src="path/to/app3_logo.jpg" alt="Adobe Ilustrator" width="100" style="margin-bottom: 20px;">
-        <img src="path/to/app4_logo.jpg" alt="Canva" width="100" style="margin-bottom: 20px;">
+<section class="about-me">
+    <h1>About Me</h1>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="element/yogafahrizal.png" alt="Yoga Fahrizal" width="300">
+        </div>
+        <div class="text-container">
+            <p>
+                Saya seorang mahasiswa Teknik Informatika dengan minat mendalam dalam desain visual, khususnya UI/UX. Memiliki beberapa pengalaman dalam proyek desain, saya berdedikasi untuk mengintegrasikan kreativitas dalam teknologi, menciptakan solusi yang inovatif dan memikat.
+            </p>
+            <button>Detail</button>
+        </div>
     </div>
-    <div style="clear: both;"></div>
-    <p>
-        Figma <progress value="70" max="100">70%</progress><br>
-        Photoshop <progress value="50" max="100">50%</progress><br>
-        Adobe Illustrator <progress value="40" max="100">40%</progress><br>
-        Canva <progress value="85" max="100">85%</progress>
-    </p>
+</section>
+</body>
+
+<section class="skills-section">
+    <h1>Skills</h1>
+    <div>
+        <img src="element/progress.png" alt="Activity Image" width="100">
+        <img src="element/logoapk.png" alt="My Image" width="100">
+    </div>
 </section>
 
-<hr>
 <section>
-    <h1 style="float: left;">Why should you hire me?</h1>
+    <h1 class="title">Why should you hire me?</h1>
     <div style="clear: both;"></div>
-    <p>
+    <p class="description">
         Saya memiliki pengalaman yang solid di bidang desain grafis dan menguasai berbagai tools editing seperti Figma, Photoshop, Adobe Illustrator, dan Canva. Kombinasi keterampilan desain dan keahlian dalam menggunakan tools tersebut memungkinkan saya memberikan kontribusi maksimal dalam proyek-proyek kreatif.
     </p>
 </section>
 
-<hr>
-<section>
-    <h2 style="text-align: center;">Trusted Partner</h2>
-    <div style="text-align: center;">
-        <img src="path/to/logo_spot.jpg" alt="Logo Spot" width="200">
-    </div>
-    <h1 style="text-align: center;">Testimonials</h1>
-    <div style="display: flex; justify-content: space-between; padding: 20px;">
-        <div style="text-align: center; width: 30%;">
-            <p>"Desainer grafis ini sangat kreatif dan profesional. Karyanya memikat, inovatif, dan memberikan dampak visual yang luar biasa."</p>
-            <img src="path/to/customer1_image.jpg" alt="Lalisa" width="100">
-            <p>Lalisa<br>CEO LLOUD</p>
+ <section class="testimonial-section">
+        <h2>Trusted Partner</h2>
+        <div style="text-align: center;">
+            <img src="element/logospot.png" alt="Logo Spot" width="287" height="68" style="margin-top: 23px;">
         </div>
-        <div style="text-align: center; width: 30%;">
-            <p>"Desainer grafisnya luar biasa! Kreativitas dan keahliannya luar biasa, menghasilkan karya yang memukau dan inovatif. Bravo!"</p>
-            <img src="path/to/customer2_image.jpg" alt="Rose'" width="100">
-            <p>Rose'<br>CEO Odd Atelier</p>
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="rectangle">
+                <p>"Desainer grafis ini sangat kreatif dan profesional. Karyanya memikat, inovatif, dan memberikan dampak visual yang luar biasa."</p>
+                <img src="element/lisa.png" alt="Lalisa" width="100">
+                <p class="name">Lalisa<br>CEO LLOUD</p>
+            </div>
+            <div class="rectangle">
+                <p>Desain grafisnya luar biasa! Kreativitasnya memukau, detailnya sempurna, dan memberikan kesan profesional yang luar biasa. Bravo!</p>
+                <img src="element/roses.png" alt="Rose'" width="100">
+                <p class="name">Rose'<br>CEO Odd Atelier</p>
+            </div>
+            <div class="rectangle">
+                <p>Desain grafisnya luar biasa! Kreativitasnya memukau, detailnya sempurna, dan memberikan kesan profesional yang luar biasa. Bravo!</p>
+                <img src="element/jenie.png" alt="Kim Jennie" width="100">
+                <p class="name">Kim Jennie<br>CEO Blisso</p>
+            </div>
         </div>
-        <div style="text-align: center; width: 30%;">
-            <p>"Desain grafisnya luar biasa! Kreativitasnya memukau, detailnya sempurna, dan memberikan kesan profesional yang luar biasa. Bravo!</p>
-            <img src="path/to/customer3_image.jpg" alt="Kim Jennie" width="100">
-            <p>Kim Jennie<br>CEO Blisso</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<hr>
-<section>
-    <h1 style="text-align: center;">Portfolio</h1>
-    <div style="display: flex; justify-content: space-between; padding: 20px;">
-        <div style="text-align: center; width: 30%;">
-            <img src="path/to/illustrator_image.jpg" alt="Illustrator" width="200">
-            <p>Illustrator</p>
-        </div>
-        <div style="text-align: center; width: 30%;">
-            <img src="path/to/web_design_image.jpg" alt="Web Design" width="200">
-            <p>Web Design</p>
-        </div>
-        <div style="text-align: center; width: 30%;">
-            <img src="path/to/product_design_image.jpg" alt="Product Design" width="200">
-            <p>Product Design</p>
-        </div>
-    </div>
-</section>
 
-<hr>
-<section>
-    <h1 style="text-align: left;">Let's Connect there</h1>
-    <button style="float: right;">Hire Me</button>
-    <div style="clear: both;"></div>
-    <div style="text-align: left;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua.</p>
+<section class="portofolio-section">
+        <h1>Portofolio</h1>
+        <div class="container">
+            <div style="text-align: center; width: 30%;">
+                <img src="element/Ilustrator.png" alt="Illustrator" width="200">
+                <p>Illustrator</p>
+            </div>
+            <div style="text-align: center; width: 30%;">
+                <img src="element/webdesign.png" alt="Web Design" width="200">
+                <p>Web Design</p>
+            </div>
+            <div style="text-align: center; width: 30%;">
+                <img src="element/productdesign.png" alt="Product Design" width="200">
+                <p>Product Design</p>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <div class="container">
+        <h1>Let's Connect there</h1>
+        <button>Hire Me</button>
     </div>
-    <div style="text-align: left;">
-        <img src="path/to/logo_image.jpg" alt="Logo" width="200">
+    <div class="navigation-contact">
+        <div class="content navigation">
+            <p>Navigation:</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+        <div class="content contact">
+            <p>Kontak:</p>
+            <ul>
+                <li>+62 8579528123</li>
+                <li><a href="mailto:yfahrizal122@gmail.com">yfahrizal122@gmail.com</a></li>
+            </ul>
+        </div>
     </div>
-    <div style="text-align: left;">
-        <p>Navigation:</p>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-        <p>Kontak:</p>
-        <ul>
-            <li>+62 8579528123</li>
-            <li><a href="mailto:yfahrizal122@gmail.com">yfahrizal122@gmail.com</a></li>
-        </ul>
+    <div class="logo">
+        <img src="element/logo_yoga.png" alt="Logo" width="293" height="132">
     </div>
-    <div style="text-align: left;">
-        <img src="path/to/linkedin_logo.jpg" alt="LinkedIn" width="50">
-        <img src="path/to/github_logo.jpg" alt="GitHub" width="50">
-        <img src="path/to/email_logo.jpg" alt="Email" width="50">
-        <img src="path/to/instagram_logo.jpg" alt="Instagram" width="50">
-    </div>
+    <section class="section-footer">
+        <div class="social-media">
+            <img src="element/in.png" alt="LinkedIn" width="50">
+            <img src="element/gth.png" alt="GitHub" width="50">
+            <img src="element/ig.png" alt="Instagram" width="50">
+            <img src="element/fb.png" alt="Facebook" width="50">
+        </div>
+    </section>
     <p style="text-align: center;">Copyright©Yoga.Fahrizal.All Rights Reserved.</p>
     <p style="text-align: center;"><a href="#">Users Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
-</section>
+</footer>
 
 </body>
 </html>
